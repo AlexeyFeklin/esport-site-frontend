@@ -1,0 +1,8 @@
+.main {
+  border: 2px solid rgb(160, 152, 152);
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 30px;
+  opacity: 0.4;
+  box-shadow: 0 4px 20px 0 rgba(118, 118, 118, 0.8);
+}

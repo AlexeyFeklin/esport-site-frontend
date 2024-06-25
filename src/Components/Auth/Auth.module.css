@@ -1,0 +1,174 @@
+ul,
+li {
+  padding: 0;
+}
+
+.auth {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-family);
+  font-size: 24px;
+  color: #fff;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.auth.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.close_btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+  cursor: pointer;
+}
+
+.auth_form {
+  position: relative;
+  background-color: var(--color-primary);
+  border: 5px solid white;
+  border-radius: 20px;
+
+  transform: scale(0.7);
+  transition: 0.3s all;
+}
+
+.auth_form.active {
+  transform: scale(1);
+}
+
+.logo {
+  width: 170px;
+  position: absolute;
+  top: 0;
+  /* расположить логотип по вертикали посередине */
+  left: 50%;
+  /* расположить логотип по горизонтали посередине */
+  transform: translate(-50%,
+      -50%);
+  /* переместить логотип обратно на половину его размера влево и вверх */
+}
+
+.form_row {
+  margin: 15% 88px 0px;
+}
+
+.form_title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.form_row li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form_row li input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.form_row li:nth-child(3) span {
+  text-align: center;
+}
+
+.form_row li input::placeholder {
+  font-family: var(--font-family);
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.form_row li input[type='mail'] {
+  padding: 2%;
+  font-family: var(--font-family);
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+}
+
+.form_row li input[type='password'] {
+  padding: 2%;
+  font-family: var(--font-family);
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+}
+
+.send_btn {
+  align-items: center;
+}
+
+.send_btn button {
+  align-items: end;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 5px 23px;
+
+  transition: 0.5s all;
+}
+
+.login_methods {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.form_row li:nth-child(2) {
+  gap: 10px;
+}
+
+.form_row li:nth-child(4) {
+  gap: 0px;
+}
+
+.form_row li:nth-child(4) span {
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form_inputs {
+  margin: 0 0 20px;
+}
+
+.error {
+  font-size: 18px;
+  color: red;
+  text-align: start;
+}
+
+input.error {
+  border-color: red;
+}
+
+.send_btn button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  color: #d2d5db;
+}

@@ -1,0 +1,57 @@
+.control_block {
+  margin: 150px 130px;
+  border: 3px solid #3500d3;
+  border-radius: 20px;
+  background-color: rgba(53, 0, 211, 0.12);
+}
+
+.control_buttons {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.control_btn {
+  border: 2px solid #3500d3;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  padding: 5px 20px;
+
+  margin-top: -2px;
+  transition: all 0.5s;
+}
+
+.control_btn span {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+}
+
+.control_btn:hover {
+  background-color: #3500d3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn_active {
+  background-color: rgba(4, 1, 25, 0.744);
+  color: #1a0eff;
+}
+
+.btn_active:hover {
+  background-color: rgba(4, 1, 25, 0.744);
+  color: #1a0eff;
+  cursor: default;
+}
+
+.control_zone {
+  border: 3px solid #3500d3;
+  border-radius: 0 0 20px 20px;
+  background: rgba(53, 0, 211, 0.12);
+  margin-bottom: -3px;
+  margin-top: 40px;
+
+  width: 100.4%;
+  margin-left: -0.2%;
+}

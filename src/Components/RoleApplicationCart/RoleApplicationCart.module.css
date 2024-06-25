@@ -1,0 +1,95 @@
+.roleApplication_Cart_info {
+  display: flex;
+  gap: 20px;
+}
+
+.roleApplication_Cart {
+  transition: all 0.5s;
+}
+
+.roleApplication_Cart:hover {
+  transform: scale(1.03);
+}
+.roleApplication_Cart_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.roleApplication_Cart_buttons svg {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+
+  transition: all 0.5s;
+}
+
+.roleApplication_Cart_buttons svg:hover {
+  cursor: pointer;
+}
+
+.roleApplication_Cart_buttons svg:nth-child(1):hover {
+  fill: #4eff02;
+  border-color: #4eff02;
+}
+
+.roleApplication_Cart_buttons svg:nth-child(2):hover {
+  fill: #ff0202;
+  border-color: #ff0202;
+}
+
+.roleApplication_Cart img {
+  border-radius: 50%;
+}
+
+.roleApplication_Cart {
+  border: 1px solid #3500d3;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  gap: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player_name {
+  font-size: calc(4px + 1vw);
+}
+
+.desiredRoles {
+  display: flex;
+  font-size: 0.8vw;
+  gap: 20px;
+}
+
+.desiredRoles li {
+  display: flex;
+  gap: 10px;
+}
+
+.question {
+  color: #bcbcbc;
+}
+
+.answer {
+  color: #3500d3;
+}
+.photo {
+  position: relative;
+  border: 3px solid var(--color-primary);
+  /* min-width: 5vw; */
+  width: 5vw;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}

@@ -1,0 +1,18 @@
+.container {
+  margin: 20vh 10vw;
+}
+
+main {
+  font-family: var(--font-family);
+  font-size: calc(8px + 1vw);
+  color: #fff;
+}
+
+.title span {
+  font-size: calc(20px + 1vw);
+}
+
+.error_message {
+  text-align: center;
+  font-size: 100px;
+}

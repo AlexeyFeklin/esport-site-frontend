@@ -1,0 +1,123 @@
+ul,
+li {
+  padding: 0;
+}
+
+.notifications {
+  position: fixed;
+  top: 9%;
+  right: 6%;
+  z-index: 10;
+
+  max-width: 220px;
+
+  border: 5px solid white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  font-family: var(--font-family);
+  font-size: 10px;
+  color: #fff;
+
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.51);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.notifications.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.notifications button {
+  font-size: 15px;
+  color: #fff;
+  background-color: #160058;
+  transition: all 0.5s;
+
+  border: 3px solid white;
+  padding: 10px 0px;
+}
+
+.notifications .row {
+  display: flex;
+}
+
+.profile_btn {
+  border-top-left-radius: 14px;
+}
+
+.profile_btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.profile_btn,
+.exit_btn {
+  flex: 1;
+}
+
+.profile_btn:hover,
+.exit_btn:hover {
+  background-color: #0f003c;
+  cursor: pointer;
+}
+
+.noft_element {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background: #272727;
+
+  border-bottom: 1px solid #fff;
+  transition: all 0.5s;
+
+  padding: 10px;
+}
+
+.noft_element:hover {
+  background-color: #171616;
+  cursor: pointer;
+}
+
+.noft_avatar img {
+  width: 50px;
+}
+
+.noft_seeMore {
+  background: #160058;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  padding: 5px 0px;
+  font-size: 15px;
+
+  transition: all 0.5s;
+
+  text-align: center;
+}
+
+.noft_seeMore:hover {
+  background: #0f003b;
+  cursor: pointer;
+}
+
+.close_element {
+  padding: 5px 0px;
+  background-color: #1f1e1e;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.close_element:hover {
+  background-color: #090909;
+  cursor: pointer;
+
+  svg {
+    fill: red;
+    transition: all 0.5s;
+  }
+}

@@ -1,0 +1,15 @@
+.zone_title {
+  margin-top: 10px;
+  display: block;
+  font-size: 48px;
+  text-align: center;
+}
+
+.roleApplications {
+  margin: 60px 30px;
+  display: inline;
+}
+
+.roleApplications > a {
+  margin-bottom: 10px;
+}

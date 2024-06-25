@@ -1,0 +1,155 @@
+.fb {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  flex-wrap: wrap;
+}
+.main_info {
+  font-family: var(--font-family);
+  font-size: calc(8px + 1vw);
+  color: #fff;
+
+  width: 20%;
+}
+
+.avatar {
+  border: 3px solid rgba(53, 0, 211, 0.7);
+  border-radius: 10px;
+
+  /* width: 0%; */
+}
+.avatar img {
+  width: 100%;
+}
+.role {
+  border: 4px solid #3500d3;
+  color: #3500d3;
+  font-size: calc(6px + 1vw);
+
+  text-align: center;
+  width: 102%;
+  margin-left: -1%;
+  padding: 3% 0;
+}
+
+.social_media {
+  display: flex;
+  background: #dadada;
+
+  width: 102%;
+
+  align-items: stretch;
+  margin: 0;
+  margin-left: -1%;
+}
+.social_media li {
+  flex: 1;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  padding: 2% 0;
+
+  border-right: 2px solid black;
+}
+
+.social_media li.unactive {
+  background: #6a6969;
+}
+
+.social_media li:hover {
+  background: #6a6969;
+  cursor: pointer;
+}
+.social_media li.unactive:hover {
+  background: #6a6969;
+  cursor: default;
+}
+.social_icon svg {
+  width: calc(23px + 1vw);
+}
+
+.change_btn {
+  font-size: calc(2px + 1vw);
+  text-align: center;
+  color: #3500d3;
+
+  padding: 7% 0;
+  transition: all 0.5s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+
+.change_btn:hover {
+  cursor: pointer;
+  background-color: #3500d3;
+  color: #fff;
+}
+.change_btn:hover svg {
+  fill: #fff;
+}
+
+.change_btn svg {
+  width: 25px;
+  fill: #3500d3;
+  transition: all 0.5s;
+}
+.change_btn::after {
+  content: '';
+  background-image: url('/src/assets/img/pencil_hvm3u4jvupje.svg');
+  right: 0;
+  top: 0;
+}
+
+.fullname {
+  font-family: var(--font-family);
+  font-size: calc(28px + 1vw);
+  color: #fff;
+
+  border-bottom: 1px solid #cba9a9;
+}
+.additional_info ul li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: calc(8px + 1vw);
+  color: #bcbcbc;
+  margin-bottom: 5%;
+}
+.answer {
+  color: #fff;
+}
+
+.green_rank {
+  color: greenyellow;
+  border: 1px solid greenyellow;
+  border-radius: 50%;
+  padding: 1%;
+}
+
+.change_role_btn {
+  border: 3px solid#3500d3;
+  margin-top: 10%;
+
+  border-radius: 10px;
+}
+
+.profile_description {
+  margin-top: 25%;
+}
+
+.profile_description_text {
+  font-size: calc(8px + 1vw);
+  color: #bcbcbc;
+  margin-top: 10%;
+}
+
+.avatar {
+  height: 63vh;
+}
+.avatar img {
+  height: 62%;
+}

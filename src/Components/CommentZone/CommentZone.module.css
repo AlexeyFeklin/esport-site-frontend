@@ -1,0 +1,19 @@
+.zone_title {
+  margin-top: 10px;
+  display: block;
+  font-size: 48px;
+  text-align: center;
+}
+
+.roleApplications {
+  margin: 60px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.roleApplications > a {
+  width: calc(50% - 15px); /* Чтобы получить две колонки */
+}

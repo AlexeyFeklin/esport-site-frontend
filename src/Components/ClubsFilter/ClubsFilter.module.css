@@ -1,0 +1,50 @@
+.filters {
+  margin-top: 3%;
+  /* max-width: 1200px; */
+}
+.filters span {
+  font-size: calc(22px + 1vw);
+}
+
+.filters ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.filters ul li {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.btn_format {
+  border: 1px solid var(--color-primary);
+  background: transparent;
+}
+
+.filters select {
+  border: 1px solid var(--color-primary);
+  background: transparent;
+  font-size: 20px;
+  color: #bcbcbc;
+  padding: 2% 30% 2% 2%;
+}
+.filters select option {
+  color: black;
+}
+
+.foramt {
+  display: flex;
+}
+.resetFilters {
+  margin-left: 3%;
+  color: var(--color-primary);
+  background: transparent;
+  border: transparent;
+}
+.resetFilters::before {
+  content: url('./../../assets/img/close.svg');
+  position: relative;
+  left: -5px;
+  top: -2px;
+}

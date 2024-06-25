@@ -1,0 +1,56 @@
+@import url('./css/recovery.css');
+@import url('./css/root.css');
+
+.optional {
+  font-size: 14px;
+}
+.userIsNotAuth {
+  height: 71.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 96px;
+  text-align: center;
+  flex-direction: column;
+}
+.back_btn {
+  font-size: 48px;
+  border: 2px solid #3500d3;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.back_btn:hover {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  background-color: #3500d3;
+  color: #fff;
+}
+.bc {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.6;
+}
+.moderator {
+  border-color: #ff2020 !important;
+  color: #ff2020 !important;
+}
+.organizer {
+  border-color: #d33300 !important;
+  color: #d33300 !important;
+}
+.commentator {
+  border-color: #19d300 !important;
+  color: #19d300 !important;
+}
+.player {
+  border-color: #00eeff !important;
+  color: #00eeff !important;
+}
+
+.user {
+  border-color: #3500d3 !important;
+  color: #3500d3 !important;
+}

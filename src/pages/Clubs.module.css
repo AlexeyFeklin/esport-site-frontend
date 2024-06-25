@@ -1,0 +1,52 @@
+.container {
+  margin: 20vh 10vw;
+}
+
+.clubs {
+  /* border: 2px solid #fff; */
+  padding: 0 0 0 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30vw);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  /* justify-content: center; */
+  /* align-items: stretch; */
+  row-gap: 2%;
+  column-gap: 4%;
+
+  margin-bottom: 7%;
+}
+
+main {
+  font-family: var(--font-family);
+  font-size: calc(4px + 1vw);
+  color: #fff;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  margin: 5% 0px;
+  height: 0;
+  border: 1px solid #c9c9c9;
+  border-radius: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title span {
+  font-size: calc(22px + 1vw);
+}
+
+.error_message {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.error {
+  display: flex;
+}

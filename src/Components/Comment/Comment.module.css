@@ -1,0 +1,97 @@
+.comment {
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.comment_avatar {
+  width: 5%;
+  height: 5%;
+}
+
+.comment_avatar img {
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  border: 1px solid #3500d3;
+}
+.comment_text {
+  margin-left: 2%;
+  width: 100%;
+  word-wrap: break-word;
+}
+.comment_info {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.comment_time {
+  font-size: 0.8vw;
+  color: #bcbcbc;
+}
+.comment_desc {
+  font-size: calc(1vw);
+}
+
+.respect_btn {
+  margin: auto 0;
+}
+
+.respect_btn svg {
+  fill: white;
+  width: 8%;
+
+  transition: all 0.5s;
+}
+
+.respect_btn svg:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.rep_quantity {
+  margin: 5px;
+  display: inline-block;
+}
+.like svg:hover {
+  fill: rgb(3, 255, 3);
+}
+.dislike svg:hover {
+  fill: rgb(180, 27, 10);
+}
+
+.child_comment {
+  margin-left: 5%;
+}
+
+.reply {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.reply svg {
+  fill: white;
+  width: 5%;
+  transition: all 0.5s;
+}
+
+.reply:hover {
+  cursor: pointer;
+  transform: translate(-10px, 0px);
+  transform: scale(1.05);
+  color: #3500d3;
+  svg {
+    fill: #3500d3;
+  }
+}
+
+.comment a {
+  color: #756cfb;
+  transition: all 0.5s;
+  flex: 0.33;
+}
+
+.comment a:hover {
+  transform: scale(1.05);
+}

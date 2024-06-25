@@ -1,0 +1,55 @@
+button:hover {
+  cursor: pointer;
+}
+
+.filters {
+  margin-top: 2%;
+}
+.filters span {
+  font-size: calc(20px + 1vw);
+}
+
+ul.category {
+  display: flex;
+  gap: 3%;
+}
+ul.category button {
+  margin-top: 1%;
+  padding: 1.5vh 2.2vw;
+  border: 2px solid var(--color-primary);
+  border-radius: 50px;
+
+  color: var(--color-primary);
+  background: rgba(0, 0, 0, 0.342);
+  transition: all 0.5s;
+}
+ul.category button:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: #fff;
+}
+ul.category button.active {
+  border: 2px solid #a900d3;
+
+  color: #a900d3;
+  box-shadow: 0 0 10px 5px rgba(169, 0, 211, 0.8);
+}
+ul.category button.active:hover {
+  border: 2px solid #a900d3;
+  background-color: #a900d3;
+  color: #fff;
+  box-shadow: 0 0 10px 5px rgba(169, 0, 211, 0.8);
+}
+
+.resetFilters {
+  margin-left: 3%;
+  color: var(--color-primary);
+  background: transparent;
+  border: transparent;
+}
+.resetFilters::before {
+  content: url('./../../assets/img/close.svg');
+  position: relative;
+  left: -5px;
+  top: -2px;
+}

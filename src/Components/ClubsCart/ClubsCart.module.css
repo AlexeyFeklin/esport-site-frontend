@@ -1,0 +1,86 @@
+.club_cart {
+  border: 3px solid var(--color-primary);
+  background: #0c003280;
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+
+  box-shadow: 0 4px 20px 0 rgba(64, 0, 255, 0.8);
+  /* margin-bottom: 30px; */
+
+  width: 30vw;
+  height: 100vh;
+  margin-bottom: 10%;
+}
+
+.club_info {
+  margin: 20px;
+}
+.club_photo {
+  border: 3px solid var(--color-primary);
+  border-radius: 5%;
+  height: 50%;
+}
+.club_photo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.club_title {
+  margin: 5% 3%;
+}
+.club_title span {
+  font-size: calc(8px + 1vw);
+}
+
+.club_white_desc {
+  font-size: 0.9vw;
+  margin-bottom: 5%;
+}
+ul,
+li {
+  padding: 0;
+}
+.club_white_desc ul {
+  display: flex;
+  gap: 10%;
+}
+.club_white_desc ul li {
+  display: flex;
+  flex-direction: column;
+}
+.club_white_desc ul li .club_char_desc {
+  color: #bcbcbc;
+}
+.news_tag {
+  margin-right: 5%;
+}
+
+.news_desc {
+  font-size: calc(2px + 1vw);
+}
+
+.club_desc span {
+  display: block;
+  word-wrap: break-word;
+  height: 100%;
+  /* border: 2px solid whitesmoke; */
+}
+
+.club_photo {
+  position: relative;
+  border: 3px solid var(--color-primary);
+  /* min-width: 5vw; */
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.club_photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}

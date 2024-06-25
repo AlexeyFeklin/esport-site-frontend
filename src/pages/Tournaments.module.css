@@ -1,0 +1,51 @@
+.container {
+  margin: 20vh 10vw;
+  /* overflow: auto; */
+}
+
+main {
+  /* margin-top: 85px; */
+  font-family: var(--font-family);
+  font-size: var(8px + 1vw);
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title span {
+  font-size: calc(22px + 1vw);
+}
+
+.tournaments {
+  /* border: 2px solid #fff; */
+  padding: 0 0 0 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30vw);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  /* justify-content: center; */
+  /* align-items: stretch; */
+  row-gap: 2%;
+  column-gap: 4%;
+
+  margin-bottom: 7%;
+}
+
+.block_desc {
+  font-size: 1vw;
+  line-height: 20px;
+}
+
+.desc_hr {
+  margin-bottom: 2%;
+}
+
+.error_message {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.error {
+  display: flex;
+}

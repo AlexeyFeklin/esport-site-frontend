@@ -1,0 +1,100 @@
+.titleBlock {
+  margin-top: 12%;
+  font-size: 40px;
+  text-align: center;
+}
+
+.titleTournament {
+  font-size: 64px;
+  text-align: center;
+}
+.titleBlock1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+.regForm {
+  background-color: #0000007c;
+  border: 2px solid #3500d3;
+  border-radius: 50px;
+  display: block;
+  width: 60%;
+  margin: 0 auto 100px;
+}
+
+.quantityBlock {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0 30px; */
+  font-size: 36px;
+}
+
+.quantityPlayers {
+  font-size: 24px;
+}
+.nameBlock {
+  display: flex;
+  font-size: 32px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nameBlock input {
+  background-color: transparent;
+  border: 2px solid #3500d3;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 100px 10px 30px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.playersBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.playersBlock li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  border: 2px solid #3500d3;
+  gap: 30px;
+  border-radius: 50px;
+  transition: all 0.5s;
+
+  padding: 15px 30px;
+}
+.playersBlock li:hover {
+  border-color: #fff;
+  background-color: #3500d3;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.AddPlayerBtn {
+  transition: all 0.5s;
+}
+.AddPlayerBtn svg {
+  width: 70px;
+  fill: #3500d3;
+  border: 2px solid #3500d3;
+  border-radius: 50%;
+  padding: 15px;
+}
+.AddPlayerBtn:hover {
+  cursor: pointer;
+  border-color: #fff;
+  background-color: #3500d3;
+  svg {
+    fill: #fff;
+    border-color: #fff;
+  }
+}
